@@ -23,7 +23,7 @@ const ExperienceCard = ({ experience }) => {
       date={<img
         src={experience.date}
         alt={experience.company_name}
-        className='w-[80%] h-[60%] object-contain opacity-100'
+        className='w-[80%] h-[60%] object-contain !opacity-100'
       />}
       iconStyle={{ background: experience.iconBg }} 
       icon={
