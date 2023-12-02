@@ -128,26 +128,42 @@ const Contact = () => {
         className='flex-[0.75] bg-tertiary p-8 rounded-2xl'
       >
         <div>
-        <p className={styles.sectionSubText}>Адреси наших дитячих садочків у м. Дніпро</p>
+        <p className={styles.sectionSubText}>Адреси наших дитячих садочків у Дніпрі</p>
         {/* <h3 className={styles.sectionHeadText}>Адреси наших дитячих сдочків</h3> */}
-          <p className='pt-10 text-white font-bold text-center'>Дитячий садочок на вул. Червоної рути, 55
-Дніпро 
+          <p className='pt-20 text-xl text-black text-center'>Дитячий садочок на вул. Червоної рути, 55 
 </p>
-          <a className='pt-5 text-black ml-40 mt-5' href="tel:+380955696255">+38 095 569 62 55</a>
-          <p className='pt-10 text-white font-bold text-center'>Дитячий садочок на вул. Грушевського, 34
-Дніпро
+<p className='pt-5 pb-5 text-black text-center text-lg hover:text-2xl'><a href="tel:+380955696255">+38 095 569 62 55</a></p>
+<hr/>          
+          <p className='pt-10 text-xl text-black text-center'>Дитячий садочок на вул. Грушевського, 34
 </p>
-          <a className='pt-5 text-black ml-40 mt-5' href="tel:+380991742715">+380 99 174 27 15</a>
-          <p className='pt-10 text-white font-bold text-center'>Початкова школа на Верещагіна,99
-Дніпро
+<p className='pt-5 pb-5 text-black text-center text-lg hover:text-2xl'>
+          <a href="tel:+380991742715">+380 99 174 27 15</a></p>
+          
+          <hr/>
+          <p className='pt-10 text-xl text-black text-center'>Початкова школа на вул. Верещагіна 99
 </p>
-          <a className='pt-5 text-black ml-40 mt-5' href="tel:+380993704729">+380 99 370 47 29</a>
+<p className='pt-5 pb-5 text-black text-center text-lg hover:text-2xl'>
+          <a href="tel:+380993704729">+380 99 370 47 29</a></p>
+          <hr/>
+          <div className='flex justify-center pt-10'>
+           <div className='ml-50 w-20 h-20 animate-bounce hover:animate-pulse'> 
           <a href='https://www.instagram.com/one.seven.ua/?igshid=MzRlODBiNWFlZA%3D%3D'>
-          <img src="src/assets/github.png" alt="Instagram" className='inline w-20 h-20 mt-20 ml-40'></img>
+          <img  src="src/assets/github.png" alt="Instagram" /* className='inline w-20 h-20 mt-20 ml-40' */></img>
           </a>
+          </div>  
+          <div > 
           <a href='https://one-seven.com.ua/'>
-          <img src="src/assets/site.png" alt="Instagram" className='inline w-50 h-20 mt-20 ml-10'></img>
+          <img className='flex-1 h-20 w-45 ml-10 animate-bounce hover:animate-pulse' src="src/assets/site.png" alt="Instagram" /* className='inline w-50 h-20 mt-20 ml-10' */></img>
           </a>
+          </div>  
+          </div>
+          <div className='flex justify-center pt-10'>
+          <iframe
+        
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d119644.5010652589!2d35.013598008222985!3d48.49882403093483!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe33f4d54229b%3A0xe618cfcc15866f55!2sONE-SEVEN!5e0!3m2!1sen!2sua!4v1701524834264!5m2!1sen!2sua"
+        
+      ></iframe>
+      </div>
         </div>
       </motion.div>
     </div>
