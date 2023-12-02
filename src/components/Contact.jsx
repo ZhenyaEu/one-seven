@@ -128,7 +128,7 @@ const Contact = () => {
         className='flex-[0.75] bg-tertiary p-8 rounded-2xl'
       >
         <div>
-        <p className={styles.sectionSubText}>Адреси наших дитячих садочків</p>
+        <p className={styles.sectionSubText}>Адреси наших дитячих садочків у м. Дніпро</p>
         {/* <h3 className={styles.sectionHeadText}>Адреси наших дитячих сдочків</h3> */}
           <p className='pt-10 text-white font-bold text-center'>Дитячий садочок на вул. Червоної рути, 55
 Дніпро 
