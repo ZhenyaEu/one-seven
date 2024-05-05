@@ -3,9 +3,10 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
+/* import { EarthCanvas } from "./canvas"; */
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+
 
 const Contact = () => {
   const formRef = useRef();
@@ -39,7 +40,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "JavaScript Mastery",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "expert2904@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -64,6 +65,8 @@ const Contact = () => {
       );
   };
 
+  
+
   return (
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
@@ -86,6 +89,7 @@ const Contact = () => {
               type='text'
               name='name'
               value={form.name}
+              autocomplete="+380"
               onChange={handleChange}
               placeholder="Ваше ім'я"
               className='bg-white-100 py-4 px-6 placeholder:text-gray text-black rounded-lg outline-none border-none font-medium'
@@ -93,13 +97,17 @@ const Contact = () => {
           </label>
           <label className='flex flex-col'>
             <span className='text-black font-medium mb-4'>Ваш номер телефону</span>
+            
+     
             <input
               type='tel'
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="+380...."
+              /* pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" */
+              placeholder="+380(00) 000-00-00"
               className='bg-white-100 py-4 px-6 placeholder:text-gray text-black rounded-lg outline-none border-none font-medium'
+              required
             />
           </label>
           <label className='flex flex-col'>
@@ -153,7 +161,7 @@ const Contact = () => {
           </div>  
           <div > 
           <a href='https://one-seven.com.ua/'>
-          <img className='flex-1 h-20 w-45 ml-10 animate-bounce hover:animate-pulse' src="src/assets/site.png" alt="Instagram" /* className='inline w-50 h-20 mt-20 ml-10' */></img>
+          <img className='flex-1 h-20 w-45 ml-10 animate-bounce hover:animate-pulse' src="src/assets/site.png" alt="our web site" /* className='inline w-50 h-20 mt-20 ml-10' */></img>
           </a>
           </div>  
           </div>
