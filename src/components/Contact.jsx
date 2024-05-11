@@ -6,6 +6,15 @@ import { styles } from "../styles";
 /* import { EarthCanvas } from "./canvas"; */
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import {
+  TERipple,
+  TEModal,
+  TEModalDialog,
+  TEModalContent,
+  TEModalHeader,
+  TEModalBody,
+  TEModalFooter,
+} from "tw-elements-react";
 
 
 const Contact = () => {
@@ -17,6 +26,8 @@ const Contact = () => {
   });
 
   const [loading, setLoading] = useState(false);
+
+  const [showModal, setShowModal] = useState(false);
 
   const handleChange = (e) => {
     const { target } = e;
@@ -122,12 +133,16 @@ const Contact = () => {
             />
           </label>
 
+          <TERipple rippleColor="white">
           <button
             type='submit'
             className='bg-white-100 py-3 px-6 rounded-xl outline-none w-fit text-black shadow-md shadow-black hover:bg-blue-100'
+            onClick={() => setShowModal(true)}
           >
             {loading ? "Надсилається..." : "Залишити заявку"}
           </button>
+          </TERipple>
+
         </form>
       </motion.div>
 
@@ -174,6 +189,34 @@ const Contact = () => {
       </div>
         </div>
       </motion.div>
+      <TEModal show={showModal} setShow={setShowModal}>
+        <TEModalDialog centered>
+          <TEModalContent>
+            <TEModalHeader>
+              {/* <!--Modal title--> */}
+              <h5 className="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200">
+                Повідомлення відправлено!
+              </h5>
+              {/* <!--Close button--> */}
+              
+            </TEModalHeader>
+            {/* <!--Modal body--> */}
+            <TEModalBody className="m-auto">Ми з Вами зв'яжемося якомога швидше!</TEModalBody>
+            <TEModalFooter>
+              <TERipple rippleColor="light">
+                <button
+                  type="button"
+                  className="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-tertiary focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
+                  onClick={() => setShowModal(false)}
+                >
+                  Закрити
+                </button>
+              </TERipple>
+              
+            </TEModalFooter>
+          </TEModalContent>
+        </TEModalDialog>
+      </TEModal>
     </div>
   );
 };
