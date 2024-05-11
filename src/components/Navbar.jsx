@@ -55,10 +55,12 @@ const Navbar = () => {
               key={nav.id}
               className={`${
                 active === nav.title ? "text-black" : "text-white"
-              } hover:underline text-[20px] font-medium cursor-pointer`}
+              } `}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a class="group text-[21px] transition-all duration-300 ease-in-out" href={`#${nav.id}`}>
+              <span class="bg-left-bottom bg-gradient-to-r from-[#915EFF] to-[#915EFF] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                {nav.title}</span></a>
             </li>
           ))}
         </ul>
@@ -80,7 +82,7 @@ const Navbar = () => {
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                  className={`font-poppins font-medium  text-[16px]  ${
                     active === nav.title ? "text-white" : "text-secondary"
                   }`}
                   onClick={() => {

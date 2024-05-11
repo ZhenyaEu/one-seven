@@ -15,6 +15,7 @@ import {
   TEModalBody,
   TEModalFooter,
 } from "tw-elements-react";
+import { github } from "../assets";
 
 
 const Contact = () => {
@@ -139,7 +140,8 @@ const Contact = () => {
             className='bg-white-100 py-3 px-6 rounded-xl outline-none w-fit text-black shadow-md shadow-black hover:bg-blue-100'
             onClick={() => setShowModal(true)}
           >
-            {loading ? "Надсилається..." : "Залишити заявку"}
+           {/*  {loading ? "Надсилається..." : "Залишити заявку"} */}
+           Відправити
           </button>
           </TERipple>
 
@@ -171,20 +173,13 @@ const Contact = () => {
           <div className='flex justify-center pt-10'>
            <div className='ml-50 w-20 h-20 animate-bounce hover:animate-pulse'> 
           <a href='https://www.instagram.com/one.seven.ua/?igshid=MzRlODBiNWFlZA%3D%3D'>
-          <img  src="src/assets/github.png" alt="Instagram" /* className='inline w-20 h-20 mt-20 ml-40' */></img>
-          </a>
-          </div>  
-          <div > 
-          <a href='https://one-seven.com.ua/'>
-          <img className='flex-1 h-20 w-45 ml-10 animate-bounce hover:animate-pulse' src="src/assets/site.png" alt="our web site" /* className='inline w-50 h-20 mt-20 ml-10' */></img>
+          <img  src={github} alt="Instagram" ></img>
           </a>
           </div>  
           </div>
           <div className='flex justify-center pt-10'>
           <iframe
-        
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d119644.5010652589!2d35.013598008222985!3d48.49882403093483!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe33f4d54229b%3A0xe618cfcc15866f55!2sONE-SEVEN!5e0!3m2!1sen!2sua!4v1701524834264!5m2!1sen!2sua"
-        
       ></iframe>
       </div>
         </div>
