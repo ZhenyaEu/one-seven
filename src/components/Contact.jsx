@@ -155,18 +155,18 @@ const Contact = () => {
         <div>
         <p className='sm:text-[18px] text-[14px] text-black uppercase tracking-wider'>Адреси наших дитячих садочків у Дніпрі</p>
         {/* <h3 className={styles.sectionHeadText}>Адреси наших дитячих сдочків</h3> */}
-          <p className='pt-20 text-xl text-black text-center'>Дитячий садочок на вул. Червоної рути, 55 
+          <p className='pt-20 text-[19px] text-black text-center'>Дитячий садочок на вул. Червоної рути, 55 
 </p>
 <p className='pt-5 pb-5 text-black text-center text-lg hover:text-2xl'><a class="group text-[21px] transition-all duration-300 ease-in-out" href="tel:+380955696255"><span class="bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">+38 095 569 62 55</span></a></p>
 <hr/>          
-          <p className='pt-10 text-xl text-black text-center'>Дитячий садочок на вул. Грушевського, 34
+          <p className='pt-10 text-[19px] text-black text-center'>Дитячий садочок на вул. Грушевського, 34
 </p>
 <p className='pt-5 pb-5 text-black text-center text-lg hover:text-2xl'>
           <a class="group text-[21px] transition-all duration-300 ease-in-out" href="tel:+380991742715">
           <span class="bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">+380 99 174 27 15</span></a></p>
           
           <hr/>
-          <p className='pt-10 text-xl text-black text-center'>Початкова школа на вул. Верещагіна 99
+          <p className='pt-10 text-[19px] text-black text-center'>Початкова школа на вул. Верещагіна 99
 </p>
 <p className='pt-5 pb-5 text-black text-center text-lg hover:text-2xl'>
           <a class="group text-[21px] transition-all duration-300 ease-in-out" href="tel:+380993704729"><span class="bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">+380 99 370 47 29</span></a></p>
