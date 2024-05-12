@@ -87,8 +87,8 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-tertiary p-8 rounded-2xl'
       >
-        <p className={styles.sectionSubText}>Давайте знайомитись...</p>
-        <h3 className={styles.sectionHeadText}>Контакти</h3>
+        <p className='sm:text-[18px] text-[14px] text-black uppercase tracking-wider'>Давайте знайомитись...</p>
+        <h3 className='text-black font-white md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]'>Контакти</h3>
 
         <form
           ref={formRef}
@@ -117,7 +117,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               /* pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" */
-              placeholder="+380(00) 000-00-00"
+              placeholder="+380..."
               className='bg-white-100 py-4 px-6 placeholder:text-gray text-black rounded-lg outline-none border-none font-medium'
               required
             />
@@ -137,7 +137,7 @@ const Contact = () => {
           <TERipple rippleColor="white">
           <button
             type='submit'
-            className='bg-white-100 py-3 px-6 rounded-xl outline-none w-fit text-black shadow-md shadow-black hover:bg-blue-100'
+            className='bg-white-100 py-3 px-6 rounded-xl outline-none w-fit text-black text-[16px] shadow-md shadow-black bg-gradient-to-r from-white-400 to-white-500 hover:from-pink-500 hover:to-yellow-500'
             onClick={() => setShowModal(true)}
           >
            {/*  {loading ? "Надсилається..." : "Залишити заявку"} */}
@@ -153,22 +153,23 @@ const Contact = () => {
         className='flex-[0.75] bg-tertiary p-8 rounded-2xl'
       >
         <div>
-        <p className={styles.sectionSubText}>Адреси наших дитячих садочків у Дніпрі</p>
+        <p className='sm:text-[18px] text-[14px] text-black uppercase tracking-wider'>Адреси наших дитячих садочків у Дніпрі</p>
         {/* <h3 className={styles.sectionHeadText}>Адреси наших дитячих сдочків</h3> */}
           <p className='pt-20 text-xl text-black text-center'>Дитячий садочок на вул. Червоної рути, 55 
 </p>
-<p className='pt-5 pb-5 text-black text-center text-lg hover:text-2xl'><a href="tel:+380955696255">+38 095 569 62 55</a></p>
+<p className='pt-5 pb-5 text-black text-center text-lg hover:text-2xl'><a class="group text-[21px] transition-all duration-300 ease-in-out" href="tel:+380955696255"><span class="bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">+38 095 569 62 55</span></a></p>
 <hr/>          
           <p className='pt-10 text-xl text-black text-center'>Дитячий садочок на вул. Грушевського, 34
 </p>
 <p className='pt-5 pb-5 text-black text-center text-lg hover:text-2xl'>
-          <a href="tel:+380991742715">+380 99 174 27 15</a></p>
+          <a class="group text-[21px] transition-all duration-300 ease-in-out" href="tel:+380991742715">
+          <span class="bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">+380 99 174 27 15</span></a></p>
           
           <hr/>
           <p className='pt-10 text-xl text-black text-center'>Початкова школа на вул. Верещагіна 99
 </p>
 <p className='pt-5 pb-5 text-black text-center text-lg hover:text-2xl'>
-          <a href="tel:+380993704729">+380 99 370 47 29</a></p>
+          <a class="group text-[21px] transition-all duration-300 ease-in-out" href="tel:+380993704729"><span class="bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">+380 99 370 47 29</span></a></p>
           <hr/>
           <div className='flex justify-center pt-10'>
            <div className='ml-50 w-20 h-20 animate-bounce hover:animate-pulse'> 

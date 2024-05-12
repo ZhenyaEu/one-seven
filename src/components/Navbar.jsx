@@ -59,7 +59,7 @@ const Navbar = () => {
               onClick={() => setActive(nav.title)}
             >
               <a class="group text-[21px] transition-all duration-300 ease-in-out" href={`#${nav.id}`}>
-              <span class="bg-left-bottom bg-gradient-to-r from-[#915EFF] to-[#915EFF] bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+              <span class="bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
                 {nav.title}</span></a>
             </li>
           ))}
