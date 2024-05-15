@@ -14,6 +14,7 @@ module.exports = withMT({
         "black-200": "#0abf54",
         "white-100": "#f3f3f3",
         "blue-100": "#fea428",
+        
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
@@ -21,9 +22,9 @@ module.exports = withMT({
       screens: {
         xs: "450px",
       },
-      backgroundImage: {
+      /* backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
-      },
+      }, */
     },
   },
   plugins: [],
