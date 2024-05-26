@@ -1,11 +1,11 @@
 import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import { ToyCanvas } from "./canvas"; 
 
 const ServiceCard = ({ index, title, icon, discription }) => (
   <Tilt className='xs:w-[250px] w-full'>
@@ -41,6 +41,7 @@ const ServiceCard = ({ index, title, icon, discription }) => (
 const About = () => {
   return (
     <>
+  
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Дозвольте представитися...</p>
         <h2 className={styles.sectionHeadText}>Про нас</h2>

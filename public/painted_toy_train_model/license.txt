@@ -1,0 +1,11 @@
+Model Information:
+* title:	Painted Toy Train Model
+* source:	https://sketchfab.com/3d-models/painted-toy-train-model-aa1e3e6271b940599e35a3d3e434209d
+* author:	daguytoday (https://sketchfab.com/daguytoday)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Painted Toy Train Model" (https://sketchfab.com/3d-models/painted-toy-train-model-aa1e3e6271b940599e35a3d3e434209d) by daguytoday (https://sketchfab.com/daguytoday) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

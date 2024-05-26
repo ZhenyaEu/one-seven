@@ -1,0 +1,11 @@
+Model Information:
+* title:	Fox toy
+* source:	https://sketchfab.com/3d-models/fox-toy-9a9460010885486f93774384609fe24f
+* author:	adamaf (https://sketchfab.com/adamaf)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Fox toy" (https://sketchfab.com/3d-models/fox-toy-9a9460010885486f93774384609fe24f) by adamaf (https://sketchfab.com/adamaf) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
