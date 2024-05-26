@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Works, StarsCanvas, Footer } from "./components";
-import { ToyCanvas, FoxCanvas, /* AirplaneCanvas, */ CrocodileCanvas } from "./components/canvas"; 
+import { ToyCanvas, FoxCanvas, /* AirplaneCanvas, */  CrocodileCanvas  } from "./components/canvas"; 
 
 const App = () => {
   return (
@@ -13,7 +13,7 @@ const App = () => {
         </div>
          <div className='relative z-[-1]'> 
         <ToyCanvas />
-        {/* <CrocodileCanvas /> */}
+        <CrocodileCanvas /> 
         <FoxCanvas />
        {/*  <AirplaneCanvas /> */}
         <About />

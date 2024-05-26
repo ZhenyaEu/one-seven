@@ -33,9 +33,9 @@ const handleScroll = () => {
 
 return (
   <mesh ref={modelRef} onScroll={handleScroll}>
-    <hemisphereLight intensity={0.15} groundColor='black' />
+    <hemisphereLight intensity={0.45} groundColor='black' />
     <spotLight
-      position={[-30, 40, 5]}
+      position={[-30, 50, 5]}
       angle={90.12}
       penumbra={1}
       intensity={1}
@@ -46,9 +46,9 @@ return (
     
     <primitive
       object={scene}
-      scale={isMobile ? 0.01 : 0.5}
-      position={isMobile ? [0, -3, -2.2] : [-10, -0.25, -0.5]}
-      rotation={[-0.04, 0.12, -0.2]}
+      scale={isMobile ? 0.3 : 0.6}
+      position={isMobile ? [-7, -3, -2.2] : [0, 3.25, -1.5]}
+      rotation={[-0.01, -0.2, -0.1]}
     />
    
   </mesh>
@@ -80,12 +80,12 @@ useEffect(() => {
 }, []);
 
 return (
-  <div className='fixed mt-[150px]  w-full h-auto inset-0 z-[-1]'>
+  <div className='fixed mt-[10px]  w-full h-auto inset-0 z-[-1]'>
   <Canvas
     frameloop='demand'
     shadows
-    dpr={[1, 2]}
-    camera={{ position: [-60, 3, 5], fov: 25 }}
+    dpr={[2, 4]}
+    camera={{ position: [25, -5, 10], fov: 45 }}
     gl={{ preserveDrawingBuffer: true }}
   >
     <Suspense fallback={<CanvasLoader />}>

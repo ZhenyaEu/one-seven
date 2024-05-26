@@ -47,9 +47,9 @@ const handleScroll = () => {
 
 return (
   <mesh ref={modelRef} onScroll={handleScroll}>
-    <hemisphereLight intensity={0.15} groundColor='black' />
+    <hemisphereLight intensity={0.12} groundColor='black' />
     <spotLight
-      position={[-20, 50, 10]}
+      position={[-20, 20, -10]}
       angle={90.12}
       penumbra={1}
       intensity={1}
@@ -61,7 +61,7 @@ return (
     <primitive
       object={scene}
       scale={isMobile ? 0.07 : 0.15}
-      position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
+      position={isMobile ? [0, -1, -1.2] : [0, -3.25, -1.5]}
       rotation={[-0.01, -0.2, -0.1]}
     />
    
