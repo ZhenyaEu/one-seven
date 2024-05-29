@@ -44,6 +44,14 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
+    if (form.phone === '' || form.phone.length < 6) {
+      alert('Будь ласка перевірте введений номер телефону');
+      return;
+    }
+
+    // Proceed to show the modal
+     setShowModal(true); 
+
     /* emailjs
       .send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
@@ -138,7 +146,7 @@ const Contact = () => {
           <button
             type='submit'
             className='bg-white-100 py-3 px-6 rounded-xl outline-none w-fit text-black text-[16px] shadow-md shadow-black bg-gradient-to-r from-white-400 to-white-500 hover:from-pink-500 hover:to-yellow-500'
-            onClick={() => setShowModal(true)}
+            onClick={() => handleSubmit()}
           >
            {/*  {loading ? "Надсилається..." : "Залишити заявку"} */}
            Відправити
