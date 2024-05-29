@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
+/* import emailjs from "@emailjs/browser";  */
 
 import { styles } from "../styles";
 /* import { EarthCanvas } from "./canvas"; */
@@ -22,7 +22,7 @@ const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
-    email: "",
+    phone: "",
     message: "",
   });
 
@@ -44,7 +44,7 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs
+    /* emailjs
       .send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
@@ -60,22 +60,22 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          alert("Thank you. I will get back to you as soon as possible."); */
 
           setForm({
             name: "",
-            email: "",
+            phone: "",
             message: "",
           });
-        },
-        (error) => {
+        };
+       /*  (error) => {
           setLoading(false);
           console.error(error);
 
           alert("Ой, щось пішло не так. Будь ласка спробуйте ще.");
-        }
-      );
-  };
+        } */
+     /*  ); */
+  /* }; */
 
   
 
@@ -101,7 +101,7 @@ const Contact = () => {
               type='text'
               name='name'
               value={form.name}
-              autocomplete="+380"
+              autoComplete="+380"
               onChange={handleChange}
               placeholder="Ваше ім'я"
               className='bg-white-100 py-4 px-6 placeholder:text-gray text-black rounded-lg outline-none border-none font-medium'
@@ -113,11 +113,11 @@ const Contact = () => {
      
             <input
               type='tel'
-              name='email'
-              value={form.email}
+              name='phone'
+              value={form.phone}
               onChange={handleChange}
-              /* pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" */
               placeholder="+380..."
+              onInput={(e) => e.target.value = e.target.value.replace(/[^0-9]/g, '')}
               className='bg-white-100 py-4 px-6 placeholder:text-gray text-black rounded-lg outline-none border-none font-medium'
               required
             />
@@ -157,19 +157,19 @@ const Contact = () => {
         {/* <h3 className={styles.sectionHeadText}>Адреси наших дитячих сдочків</h3> */}
           <p className='pt-20 text-[19px] text-black text-center'>Дитячий садочок на вул. Червоної рути, 55 
 </p>
-<p className='pt-5 pb-5 text-black text-center text-lg hover:text-2xl'><a class="group text-[21px] transition-all duration-300 ease-in-out" href="tel:+380955696255"><span class="bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">+38 095 569 62 55</span></a></p>
+<p className='pt-5 pb-5 text-black text-center text-lg hover:text-2xl'><a className="group text-[21px] transition-all duration-300 ease-in-out" href="tel:+380955696255"><span className="bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">+38 095 569 62 55</span></a></p>
 <hr/>          
           <p className='pt-10 text-[19px] text-black text-center'>Дитячий садочок на вул. Грушевського, 34
 </p>
 <p className='pt-5 pb-5 text-black text-center text-lg hover:text-2xl'>
-          <a class="group text-[21px] transition-all duration-300 ease-in-out" href="tel:+380991742715">
-          <span class="bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">+380 99 174 27 15</span></a></p>
+          <a className="group text-[21px] transition-all duration-300 ease-in-out" href="tel:+380991742715">
+          <span className="bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">+380 99 174 27 15</span></a></p>
           
           <hr/>
           <p className='pt-10 text-[19px] text-black text-center'>Початкова школа на вул. Верещагіна 99
 </p>
 <p className='pt-5 pb-5 text-black text-center text-lg hover:text-2xl'>
-          <a class="group text-[21px] transition-all duration-300 ease-in-out" href="tel:+380993704729"><span class="bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">+380 99 370 47 29</span></a></p>
+          <a className="group text-[21px] transition-all duration-300 ease-in-out" href="tel:+380993704729"><span className="bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">+380 99 370 47 29</span></a></p>
           <hr/>
           <div className='flex justify-center pt-10'>
            <div className='ml-50 w-20 h-20 animate-bounce hover:animate-pulse'> 

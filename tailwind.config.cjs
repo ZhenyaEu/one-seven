@@ -7,9 +7,9 @@ module.exports = withMT({
   theme: {
     extend: {
       colors: {
-        primary: '#8697C4',/* "#fea428", */
+        primary: '#8697C4',
         secondary: "white",
-        tertiary: /* '#8697C4' */ /* "#3be8b0" */  /* 'rgba(59, 232, 176, 1)' */'#EDE8F5',  
+        tertiary: '#EDE8F5',  
         "black-100": "#FAF5E9",
         "black-200": "#0abf54",
         "white-100": "#f3f3f3",
@@ -22,9 +22,6 @@ module.exports = withMT({
       screens: {
         xs: "450px",
       },
-      /* backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
-      }, */
     },
   },
   plugins: [],

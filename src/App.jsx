@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
-
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Works, StarsCanvas, Footer } from "./components";
-import { ToyCanvas, FoxCanvas, /* AirplaneCanvas, */  CrocodileCanvas  } from "./components/canvas"; 
+import { ToyCanvas, FoxCanvas, CrocodileCanvas  } from "./components/canvas"; 
+
 
 const App = () => {
   return (
@@ -15,10 +15,8 @@ const App = () => {
         <ToyCanvas />
         <CrocodileCanvas /> 
         <FoxCanvas />
-       {/*  <AirplaneCanvas /> */}
         <About />
         <Experience />
-       {/*  <Tech /> */}
         <Works />
         <Feedbacks />
          </div> 

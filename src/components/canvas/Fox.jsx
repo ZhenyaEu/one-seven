@@ -16,7 +16,6 @@ const handleScroll = () => {
   const rotationSpeed = 0.0009;
   modelRef.current.rotation.x = scrollY * rotationSpeed;
   modelRef.current.rotation.y = scrollY * rotationSpeed;
-  
 };
 
 // Attach the scroll listener to the window

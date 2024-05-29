@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
     
-    const currentDate = new Date();
+const currentDate = new Date();
 
     return (
 <div>

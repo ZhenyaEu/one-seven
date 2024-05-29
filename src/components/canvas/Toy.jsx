@@ -3,32 +3,18 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
-
-
-
-
-
-
-
-
-
 const Train = ({ isMobile }) => {
 
-    const [scrollY, setScrollY] = useState(0);  
-
+const [scrollY, setScrollY] = useState(0);  
 const { scene } = useGLTF("./painted_toy_train_model/scene.gltf"); 
 const modelRef = useRef();
-
- 
 
 // Memoized handleScroll function
 const handleScroll = () => {
   setScrollY(window.scrollY);
   const rotationSpeed = 0.001;
-
     modelRef.current.rotation.x = scrollY * rotationSpeed;
     modelRef.current.rotation.y = scrollY * rotationSpeed;
-  
 };
 
 // Attach the scroll listener to the window
@@ -41,8 +27,6 @@ const handleScroll = () => {
     window.removeEventListener('scroll', handleScroll);
   }; 
 }, [scrollY]); 
-
-
 
 
 return (

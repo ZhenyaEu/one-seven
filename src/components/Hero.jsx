@@ -1,7 +1,7 @@
- import { motion } from "framer-motion";
-
+import { motion } from "framer-motion";
 import { styles } from "../styles";
-  import { ComputersCanvas } from "./canvas";  
+import { CartoonCanvas } from "./canvas";  
+
 
 const Hero = () => {
   return (
@@ -13,20 +13,8 @@ const Hero = () => {
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div>
-
-        <div className="z-10">
-          {/* <h1 className='text-[70px] font-bold text-white drop-shadow-2xl mt-20 bg-sky-100 rounded' >
-            Привіт, ми навчальний
-            <h2 className='font-black text-gray lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2'>
-           простір для розвитку дитини
-          </h2>
-            <span className='text-white'>One Seven</span>
-          </h1> */}
-        </div>
       </div>
-
-        <ComputersCanvas />
-
+        <CartoonCanvas />
        <div  className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center' >
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
