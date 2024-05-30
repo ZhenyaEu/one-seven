@@ -188,7 +188,14 @@ const Contact = () => {
           </div>
           <div className='flex justify-center pt-10'>
           <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d119644.5010652589!2d35.013598008222985!3d48.49882403093483!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe33f4d54229b%3A0xe618cfcc15866f55!2sONE-SEVEN!5e0!3m2!1sen!2sua!4v1701524834264!5m2!1sen!2sua"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d119644.5010652589!2d35.013598008222985!3d48.49882403093483!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe33f4d54229b%3A0xe618cfcc15866f55!2sONE-SEVEN!5e0!3m2!1sen!2sua!4v1701524834264!5m2!1sen!2sua"
+            title="Google Maps location of ONE-SEVEN"
+            width="300"
+            height="150" 
+            style={{border:"0"}} 
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
       </div>
         </div>

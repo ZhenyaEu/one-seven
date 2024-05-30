@@ -1,9 +1,18 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { CartoonCanvas } from "./canvas";  
+import { CartoonCanvas } from "./canvas"; 
+import { useEffect } from "react"; 
 
 
-const Hero = () => {
+const Hero = ({ onLoaded }) => {
+  useEffect(() => {
+    // Simulate an async operation (e.g., fetching data)
+    setTimeout(() => {
+      // Notify that the Hero component has loaded
+      onLoaded();
+    }, 1000); // Adjust the timeout to simulate loading duration
+  }, [onLoaded]);
+
   return (
     <section className={`relative w-full h-screen mx-auto cursor-grab`}>
       <div
