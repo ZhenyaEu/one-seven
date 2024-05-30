@@ -3,11 +3,11 @@ import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+import { insta } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-import { Carousel, Typography, Button } from "@material-tailwind/react"
+/* import { Carousel, Typography, Button } from "@material-tailwind/react" */
 
 const ProjectCard = ({
   index,
@@ -40,7 +40,7 @@ const ProjectCard = ({
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
-                src={github}
+                src={insta}
                 alt='source code'
                 className='w-1/1 h-1/1 object-contain'
               />

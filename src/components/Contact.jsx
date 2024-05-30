@@ -15,7 +15,7 @@ import {
   TEModalBody,
   TEModalFooter,
 } from "tw-elements-react";
-import { github } from "../assets";
+import { insta } from "../assets";
 
 
 const Contact = () => {
@@ -182,7 +182,7 @@ const Contact = () => {
           <div className='flex justify-center pt-10'>
            <div className='ml-50 w-20 h-20 animate-bounce hover:animate-pulse'> 
           <a href='https://www.instagram.com/one.seven.ua/?igshid=MzRlODBiNWFlZA%3D%3D'>
-          <img  src={github} alt="Instagram" ></img>
+          <img  src={insta} alt="Instagram" loading="lazy" ></img>
           </a>
           </div>  
           </div>

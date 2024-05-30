@@ -3,7 +3,7 @@ import {
   backend,
   creator,
   web,
-  javascript,
+  /* javascript,
   typescript,
   html,
   css,
@@ -14,18 +14,18 @@ import {
   mongodb,
   git,
   figma,
-  docker,
+  docker, */
   meta,
-  meta1,
-  starbucks,
-  starbuckslogo,
-  tesla,
-  shopify,
-  shopify1,
+  /* meta1, */
+  /* starbucks, */
+  /* starbuckslogo, */
+  /* tesla, */
+  /* shopify, */
+  /* shopify1, */
   carrent,
   jobit,
   tripguide,
-  threejs,
+  /* threejs, */
 } from "../assets";
 
 export const navLinks = [
@@ -66,7 +66,7 @@ const services = [
   },
 ];
 
-const technologies = [
+/* const technologies = [
   {
     name: "HTML 5",
     icon: html,
@@ -119,45 +119,45 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
-];
+]; */
 
 const experiences = [
   {
     title: "Інтелектуальний розвиток",
-    company_name: "Starbucks",
-    icon: starbucks,
+    /* company_name: "Starbucks", */
+    icon: meta,
     iconBg: "white",
-    date: starbuckslogo,
+    /* date: starbuckslogo, */
     points: [
       "Система занять побудована на основі 9-тирічного досвіду та напрацювань нашої команди з використанням елементів методик М. Шичидо (ейдетика), нейроіграми, творчою та проектною діяльністю.",
     ],
   },
   {
     title: "Фізичне виховання",
-    company_name: "Tesla",
-    icon: tesla,
+    /* company_name: "Tesla", */
+    icon: meta,
     iconBg: "white",
-    date: "Jan 2021 - Feb 2022",
+    /* date: "Jan 2021 - Feb 2022", */
     points: [
       "Прогулянки, за будь-яких погодних умов, окрім стихійних лих; зарядки, літні загартування, рухливі ігри, спортивні сенсорні доріжки, додаткові спортивні гуртки в садочку (футбол, черлідинг, танці тощо)",
     ],
   },
   {
     title: "Музичний розвиток",
-    company_name: "Shopify",
-    icon: shopify,
+    /* company_name: "Shopify", */
+    icon: meta,
     iconBg: "white",
-    date: shopify1,
+    /* date: shopify1, */
     points: [
       "Музичні заняття: навчають реалізовувати творчий потенціал дітей, формують емоційний інтелект, допомагають пізнати можливості власного тіла, розвивають розуміння краси та стилю в мистецтві і житті.",
     ],
   },
   {
     title: "Знайомимось зі світом",
-    company_name: "Meta",
+    /* company_name: "Meta", */
     icon: meta,
     iconBg: "white",
-    date: meta1,
+   /*  date: meta1, */
     points: [
       `"Щоп'ятниці - день цікавинок, чергуватимуться:
       1) Занурення у культуру іншої країни + кулінарний майстер-клас;
@@ -255,4 +255,4 @@ const projects = [
   
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, /* technologies, */ experiences, testimonials, projects };
