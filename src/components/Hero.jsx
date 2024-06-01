@@ -5,12 +5,12 @@ import { useEffect } from "react";
 
 
 const Hero = ({ onLoaded }) => {
+  
   useEffect(() => {
-    // Simulate an async operation (e.g., fetching data)
     setTimeout(() => {
       // Notify that the Hero component has loaded
       onLoaded();
-    }, 1000); // Adjust the timeout to simulate loading duration
+    }, 1000); 
   }, [onLoaded]);
 
   return (

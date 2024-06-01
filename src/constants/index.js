@@ -3,30 +3,11 @@ import {
   backend,
   creator,
   web,
-  /* javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker, */
   meta,
-  /* meta1, */
-  /* starbucks, */
-  /* starbuckslogo, */
-  /* tesla, */
-  /* shopify, */
-  /* shopify1, */
   carrent,
   jobit,
   tripguide,
-  /* threejs, */
-} from "../assets";
+ } from "../assets";
 
 export const navLinks = [
   {
@@ -66,98 +47,35 @@ const services = [
   },
 ];
 
-/* const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
-]; */
-
 const experiences = [
   {
     title: "Інтелектуальний розвиток",
-    /* company_name: "Starbucks", */
     icon: meta,
     iconBg: "white",
-    /* date: starbuckslogo, */
     points: [
       "Система занять побудована на основі 9-тирічного досвіду та напрацювань нашої команди з використанням елементів методик М. Шичидо (ейдетика), нейроіграми, творчою та проектною діяльністю.",
     ],
   },
   {
     title: "Фізичне виховання",
-    /* company_name: "Tesla", */
     icon: meta,
     iconBg: "white",
-    /* date: "Jan 2021 - Feb 2022", */
     points: [
       "Прогулянки, за будь-яких погодних умов, окрім стихійних лих; зарядки, літні загартування, рухливі ігри, спортивні сенсорні доріжки, додаткові спортивні гуртки в садочку (футбол, черлідинг, танці тощо)",
     ],
   },
   {
     title: "Музичний розвиток",
-    /* company_name: "Shopify", */
     icon: meta,
     iconBg: "white",
-    /* date: shopify1, */
     points: [
       "Музичні заняття: навчають реалізовувати творчий потенціал дітей, формують емоційний інтелект, допомагають пізнати можливості власного тіла, розвивають розуміння краси та стилю в мистецтві і житті.",
     ],
   },
   {
     title: "Знайомимось зі світом",
-    /* company_name: "Meta", */
     icon: meta,
     iconBg: "white",
-   /*  date: meta1, */
     points: [
       `"Щоп'ятниці - день цікавинок, чергуватимуться:
       1) Занурення у культуру іншої країни + кулінарний майстер-клас;
@@ -255,4 +173,4 @@ const projects = [
   
 ];
 
-export { services, /* technologies, */ experiences, testimonials, projects };
+export { services, experiences, testimonials, projects };

@@ -6,7 +6,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
-import { Carousel, Typography, Button } from "@material-tailwind/react"
+/* import { Carousel, Typography, Button } from "@material-tailwind/react" */
 
 const FeedbackCard = ({
   index,

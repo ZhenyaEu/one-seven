@@ -1,9 +1,8 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-/* import emailjs from "@emailjs/browser";  */
+import emailjs from "@emailjs/browser";  
 
 import { styles } from "../styles";
-/* import { EarthCanvas } from "./canvas"; */
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import {
@@ -49,41 +48,39 @@ const Contact = () => {
       return;
     }
 
-    // Proceed to show the modal
-     setShowModal(true); 
-
-    /* emailjs
+    
+     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_1gpa3fq',
+        'template_b4cytvb',
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
-          from_email: form.email,
+          to_name: "One Seven",
+          from_email: form.phone,
           to_email: "expert2904@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        'm7voEtDchhhEvwNhc'
       )
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible."); */
+          setShowModal(true); 
 
           setForm({
             name: "",
             phone: "",
             message: "",
           });
-        };
-       /*  (error) => {
+         }, 
+         (error) => {
           setLoading(false);
           console.error(error);
 
           alert("Ой, щось пішло не так. Будь ласка спробуйте ще.");
-        } */
-     /*  ); */
-  /* }; */
+        } 
+       ); 
+   }; 
 
   
 
@@ -148,8 +145,8 @@ const Contact = () => {
             className='bg-white-100 py-3 px-6 rounded-xl outline-none w-fit text-black text-[16px] shadow-md shadow-black bg-gradient-to-r from-white-400 to-white-500 hover:from-pink-500 hover:to-yellow-500'
             onClick={() => handleSubmit()}
           >
-           {/*  {loading ? "Надсилається..." : "Залишити заявку"} */}
-           Відправити
+           {loading ? "Надсилається..." : "Залишити заявку"} 
+         
           </button>
           </TERipple>
 
@@ -162,7 +159,7 @@ const Contact = () => {
       >
         <div>
         <p className='sm:text-[18px] text-[14px] text-black uppercase tracking-wider'>Адреси наших дитячих садочків у Дніпрі</p>
-        {/* <h3 className={styles.sectionHeadText}>Адреси наших дитячих сдочків</h3> */}
+      
           <p className='pt-20 text-[19px] text-black text-center'>Дитячий садочок на вул. Червоної рути, 55 
 </p>
 <p className='pt-5 pb-5 text-black text-center text-lg hover:text-2xl'><a className="group text-[21px] transition-all duration-300 ease-in-out" href="tel:+380955696255"><span className="bg-left-bottom bg-gradient-to-r from-black to-black bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">+38 095 569 62 55</span></a></p>
